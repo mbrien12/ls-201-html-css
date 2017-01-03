@@ -19,16 +19,18 @@
 
 
 body {
-  margin: 140px 70px 140px 70px;
+  padding: 140px 70px 140px 70px;
   background-color: #d2dbbe;
   font-family: 'Roboto', sans-serif;
   width: 1100px;
+  color: #3e606f;
 }
 
 main {
 background-color: #ffffff;
 padding: 75px;
-width: 910px;
+width: 960px;
+color: #3e606f;
 }
 
 h1 {
@@ -40,9 +42,9 @@ h1 {
   line-height: 0.639;
   text-align: left;
   position: absolute;
-  left: 199.441px;
-  top: 96.304px;
-  z-index: 15;
+  position: absolute;
+  left: 200px;
+  top: 60px;
 }
 
 /*Navigation*/
@@ -82,7 +84,6 @@ a {
   top: 20px;
   width: 100px;
   height: 100px;
-  z-index: 14;
 }
 
 .header-image {
@@ -91,6 +92,12 @@ a {
   height: 383px;
 }
 
+.mid-text {
+  width: 550px;
+}
+
 .image-two {
+width: 330px;
 float: right;
+display: inline-block;
 }
