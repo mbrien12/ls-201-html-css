@@ -38,16 +38,18 @@ h1 {
   color: #193441;
 }
 
+
 .heading {
   line-height: 0.639;
   text-align: left;
-  position: absolute;
   position: absolute;
   left: 200px;
   top: 60px;
 }
 
 /*Navigation*/
+
+
 
 ul {
   margin: 8px;
@@ -70,6 +72,9 @@ li {
   background: white;
   display: inline;
   padding: 30px;
+  border: 0px solid #000000;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
 }
 
 a {
@@ -88,10 +93,10 @@ a {
 
 .header-image {
   padding: 30px;
-  width: 900px;
   height: 383px;
 }
 
+/*Removed this to debug - delete if not needed*/
 .mid-text {
   width: 550px;
 }
@@ -100,4 +105,5 @@ a {
 width: 330px;
 float: right;
 display: inline-block;
+padding: 30px;
 }
