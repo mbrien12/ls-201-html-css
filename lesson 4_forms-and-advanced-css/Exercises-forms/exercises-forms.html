@@ -206,7 +206,7 @@
 
     </form>
 
-    <h1>Exercise 4</h1>
+    <h1>Exercise 4, 5 and 6</h1>
 
     <!--Convert the radios and checkboxes in the filter forms to selects. Make sure your retain the ability to select any number of tags.-->
 
@@ -218,7 +218,7 @@
           </dt>
 
           <dd>
-      <select name="categories">
+      <select name="categories" id='categories'>
         <option value="core">Core</option>
         <option value="plugins_libraries">Plugins and Libraries</option>
         <option value="conventions">Conventions</option>
@@ -232,7 +232,7 @@
       <label for="tags">Tags</label>
     </dt>
     <dd>
-      <select name="tags" multiple>
+      <select name="tags" id="tags" multiple>
         <option value="html">HTML</option>
         <option value="css">CSS</option>
         <option value="javascript">Javascript</option>
@@ -246,6 +246,7 @@
     </dl>
 
           <input type="submit" value="Filter" />
+          <input type="reset" value="Reset" />
 
     </fieldset>
     </form>
