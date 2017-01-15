@@ -7,6 +7,9 @@
   </head>
   <body>
 
+
+    <h1>Exercise 1</h1>
+
     <!--Create a contact form that collects the uers's first name, last name, email address and phone number. Be sure to use appropriate input types, and prevent iOS devices from modifying the email input.-->
 
     <form id="contact-form" action="#" method="post">
@@ -38,6 +41,53 @@
 
       </ul>
 
+    </form>
+
+    <h1>Exercise 2</h1>
+
+    <!--Add a select box to the form for phone type, with options of home, business and mobile. Make sure the home option is pre-selected.-->
+
+    <form action="#" method="post">
+      <fieldset>
+        <dl>
+          <dt>
+            <label for="first-name">First Name</label>
+          </dt>
+          <dd>
+            <input type="text" name="first-name" id="first-name" />
+          </dd>
+
+          <dt>
+            <label for="last-name">Last Name</label>
+          </dt>
+          <dd>
+            <input type="text" name="last-name" id="last-name" />
+          </dd>
+
+          <dt>
+            <label for="email">Email</label>
+          </dt>
+          <dd>
+            <input type="email" name="email" id="email" />
+          </dd>
+
+          <dt>
+            <label for="phone">Phone Number</label>
+          </dt>
+          <dd>
+            <input type="tel" name="phone" id="phone" />
+          </dd>
+          <select>
+            <option value="home" selected >Home</option>
+            <option value="business">Business</option>
+            <option value="mobile">Mobile</option>
+          </select>
+
+        </di>
+
+        <input type="submit" value="submit" />
+
+      </fieldset>
     </form>
 
 
