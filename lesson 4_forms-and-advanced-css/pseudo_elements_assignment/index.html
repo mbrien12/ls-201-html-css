@@ -24,7 +24,7 @@
       }
 
       #column {
-        margin: 0 120px 0 160px;
+        margin: 0 140px 0 160px;
       }
 
       header {
@@ -57,7 +57,7 @@
         width: 120px;
         height: 100vh;
         padding: 15px;
-        margin-right: -120px;
+        margin-right: -140px;
         font-size: 12px;
         background: #e74c3c;
         box-sizing: border-box;
@@ -107,6 +107,25 @@
      background-position: 100% -46px;
    }
 
+   footer a:before {
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     margin: 0 5px 0 0;
+     vertical-align: middle;
+     content: "";
+     background: transparent url("icons_social.png") 0 0 no-repeat;
+     background-size: 24px;
+   }
+   footer a:hover:before {
+     background-color: #00bf8f;
+   }
+   footer a.facebook:before {
+     background-position: 0 -24px;
+   }
+   footer a.instagram:before {
+     background-position: 0 100%;
+   }
 
     </style>
   </head>
@@ -132,10 +151,10 @@
 
       <footer>
         <ul>
-          <li><a href="">Twitter</a></li>
-          <li><a href="">Facebook</a></li>
-          <li><a href="">Instagram</a></li>
-        </ul>
+           <li><a class="twitter" href="">Twitter</a></li>
+           <li><a class="facebook" href="">Facebook</a></li>
+           <li><a class="instagram" href="">Instagram</a></li>
+         </ul>
       </footer>
     </div>
   </body>
