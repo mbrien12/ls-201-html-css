@@ -1,0 +1,38 @@
+body {
+  width: 1200px;
+}
+
+/* Header with nav */
+
+header {
+  background-image: url("images/bg_body.gif");
+}
+
+h1 {
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+}
+
+/* Main Section */
+
+main {
+  text-align: center;
+  margin: 100px 200px 100px 200px;
+}
+
+p {
+  text-align: center;
+}
+
+/* Footer */
+
+footer {
+  background-color: #e3eae0;
+}
