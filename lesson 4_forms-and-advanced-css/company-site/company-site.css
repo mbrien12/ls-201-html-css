@@ -104,3 +104,10 @@ footer li a.email {
 footer li a.instagram {
   background-position: 0 -138px;
 }
+
+/* Projects */
+
+figure img {
+  display: block;
+  width: 100%;
+}
