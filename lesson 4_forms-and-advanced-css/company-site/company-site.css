@@ -10,6 +10,16 @@ a {
   text-decoration: none;
 }
 
+/*
+.column {
+  width: 1000px;
+  color: #3e59b2;
+}
+*/
+
+
+
+
 /* Header with nav */
 
 
@@ -107,7 +117,102 @@ footer li a.instagram {
 
 /* Projects */
 
-figure img {
+#projects article {
+  padding: 0 0 50px 0;
+}
+
+#projects article + article {
+  padding-top: 60px;
+}
+
+#projects figure {
+  padding: 0 30px 20px 30px;
+  margin: 0;
+}
+
+#projects article p {
+  padding: 0 150px;
+  margin: 0;
+}
+
+#projects figure img {
   display: block;
   width: 100%;
+}
+
+/* Teams */
+
+#team article {
+  padding: 0 0 225px 0;
+}
+
+#team p {
+  padding: 0 110px 100px 110px;
+}
+
+#team li {
+  display: inline-block;
+  padding: 0 30px;
+  font-size: 24px;
+}
+
+#team li img {
+  display: block;
+  margin: 0 0 20px 0;
+}
+
+
+.modal_layer {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, .3);
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  left: 50%;
+  z-index: 3;
+  width: 660px;
+  padding: 125px 70px 90px 85px;
+  margin: 0 0 0 -415px;
+  text-align: left;
+  background: #ffffff;
+}
+
+#team .modal p {
+  padding: 0;
+  font-size: 20px;
+}
+
+.modal a.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  text-align: left;
+  text-indent: -8685px;
+  overflow: hidden;
+  background: transparent url("images/icon_close.png") 0 0 no-repeat;
+}
+
+#team .modal img {
+  display: inline-block;
+  width: 96px;
+  margin: 0 30px 0 0;
+  vertical-align: middle;
+}
+
+.modal h3 {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: normal;
+  vertical-align: middle;
 }
