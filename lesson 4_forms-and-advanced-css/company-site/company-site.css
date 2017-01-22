@@ -1,19 +1,49 @@
 body {
-  width: 1200px;
+  background-image: url("images/bg_body.gif");
+  font-family: Helvitica, Arial;
+  text-align: center;
+  color: #45494d;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Header with nav */
 
-header {
-  background-image: url("images/bg_body.gif");
-}
 
 h1 {
   text-align: center;
 }
 
+h2 {
+  color: #45494d;
+  font-size: 36px;
+}
+
+h3 {
+  color: #3e59b2;
+  font-size: 24px;
+}
+
 nav {
   text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+nav li {
+display: inline;
+padding: 0 42px;
+}
+
+nav a {
+  color: #cacaca;
+}
+
+nav a.active {
+  color: #5f9bd7;
 }
 
 li {
@@ -23,16 +53,54 @@ li {
 /* Main Section */
 
 main {
-  text-align: center;
-  margin: 100px 200px 100px 200px;
+  padding: 100px 0 0 0;
+  background-color: #ffffff;
+}
+
+article {
+  padding: 0 110px 100px 110px;
 }
 
 p {
   text-align: center;
+  padding: 0 110px;
 }
 
 /* Footer */
 
 footer {
-  background-color: #e3eae0;
+  background-color: #e7e7e7;
+  color: #b2b2b2;
+  text-align: center;
+  padding: 75px 0;
+}
+
+footer p {
+  padding: 0 0 40px 0;
+}
+
+footer li {
+  display: inline-block;
+  padding: 0 62px;
+}
+
+footer li a {
+  display: block;
+  width: 46px;
+  height: 46px;
+  overflow: hidden;
+  text-indent: -9000px;
+  background: transparent url(images/icons_social-media.png) 0 0 no-repeat;
+}
+
+footer li a.facebook {
+  background-position: 0 -46px;
+}
+
+footer li a.email {
+  background-position: 0 -92px;
+}
+
+footer li a.instagram {
+  background-position: 0 -138px;
 }
