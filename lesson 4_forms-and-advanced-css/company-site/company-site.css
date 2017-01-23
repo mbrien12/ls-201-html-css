@@ -10,22 +10,24 @@ a {
   text-decoration: none;
 }
 
-/*
+
 .column {
-  width: 1000px;
+  max-width: 1000px;
   color: #3e59b2;
 }
-*/
-
-
 
 
 /* Header with nav */
 
 
-h1 {
-  text-align: center;
+h1 a {
+  display: inline-block;
+  width: 298px;
+  height: 242px;
+  text-indent: -9999px;
+  background: transparent url("images/logo.png") 0 0 no-repeat;
 }
+
 
 h2 {
   color: #45494d;
@@ -159,4 +161,105 @@ footer li a.instagram {
 #team li img {
   display: block;
   margin: 0 0 20px 0;
+}
+
+/* Responsive sizing */
+
+@media (max-width: 875px) {
+  #team li {
+    width: 48%;
+    padding: 0 0 30px 0;
+  }
+  #team li img {
+    margin: 0 auto 25px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 65px;
+  }
+  h1 a {
+    width: 223px;
+    height: 182px;
+    margin-bottom: 30px;
+    background-size: cover;
+  }
+  header img {
+    width: 100%;
+  }
+  nav {
+    padding-bottom: 20px;
+  }
+  main {
+    padding-top: 70px;
+  }
+  article {
+    padding-bottom: 50px;
+  }
+  article p {
+    padding: 0 40px;
+    text-align: justify;
+  }
+  footer {
+    padding: 35px 0;
+  }
+  footer li {
+    padding: 0 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding-top: 0;
+    font-size: 16px;
+  }
+  header {
+    padding: 20px 15px;
+  }
+  header h1 {
+    float: left;
+    margin: 20px 0 0 0;
+    font-size: 22px;
+  }
+  header h1 a {
+    width: auto;
+    height: 40px;
+    padding: 10px 0 0 55px;
+    font-size: 22px;
+    text-indent: 0;
+    text-decoration: none;
+    color: #ffffff;
+    background-position: -20px 0;
+    background-size: 90px auto;
+  }
+  nav {
+    text-align: right;
+    padding-bottom: 0;
+  }
+  nav li {
+    display: block;
+    font-size: 16px;
+    padding: 5px 0;
+  }
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h2:before,
+h2:after {
+  vertical-align: 0;
+}
+
+#team p {
+  padding: 0 30px 40px 30px;
+}
+
+footer li {
+  padding: 0 16px;
+}
 }
