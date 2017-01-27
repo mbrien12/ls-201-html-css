@@ -40,7 +40,7 @@ p {
   font-size: 28px;
 }
 
-/* Tables */
+/* Description list in header */
 
 dl {
   padding: 0 0 0 10px;
@@ -52,6 +52,7 @@ dt {
   font-weight: 900;
   font-size: 28px;
   padding: 0 0 0 10px;
+  text-align: left;
 }
 
 dd {
@@ -64,6 +65,7 @@ header dl {
   display: inline-block;
   width: 50%;
   padding: 5px 0;
+  margin: 0;
 }
 
 header dl + dl {
@@ -72,4 +74,43 @@ header dl + dl {
 
 header dl + dl dt {
   font-weight: normal;
+}
+
+/* Tables */
+
+table {
+  width: 100%;
+}
+
+
+thead th {
+  text-align: right;
+  padding: 10px 5px 0 0;
+}
+
+tbody th {
+  width: 100%;
+  font-weight: normal;
+  border-top: 1px solid black;
+  text-align: left;
+}
+
+th {
+  font-size: 26px;
+}
+
+tbody td {
+  font-weight: 100;
+  border-top: 1px solid black;
+}
+
+
+td dt {
+  font-weight: normal;
+}
+
+tr td:last-of-type {
+  font-weight: 600;
+  text-align: right;
+  font-size: 26px;
 }
