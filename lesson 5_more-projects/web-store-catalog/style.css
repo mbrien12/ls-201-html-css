@@ -1,7 +1,6 @@
 body {
   background: #ffd505;
   font: 16px Helvetica, Arial, sans-serif;
-
 }
 
 header, main {
@@ -71,4 +70,40 @@ figcaption {
 
 figure p {
   margin-top: 0;
+}
+
+figure {
+  width: 100%;
+  height: 160px;
+}
+/*Clicked on image*/
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input:checked + figure img {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  width: 400px;
+  height: auto;
+  margin: 0 0 0 -200px;
+  z-index: 2;
+}
+
+input:checked + figure:before {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  content: "";
+  background: rgba(0, 0, 0, .4);
+}
+
+label {
+  display: block;
+  cursor: pointer;
 }
