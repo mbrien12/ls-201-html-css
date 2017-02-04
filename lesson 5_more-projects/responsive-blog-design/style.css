@@ -1,7 +1,19 @@
+
+/*Debug layouts
+ {
+  border: 1px solid rgba(0,0,0,0.3);
+}
+*/
+
+
 body {
   background: #3d3d3d;
   font-family: Helvetica, Arial, sans-serif;
   color: #45494d;
+}
+
+div {
+  display: block;
 }
 
 /*Header*/
@@ -45,15 +57,23 @@ nav a.active {
 
 main {
   background: #ffffff;
-  padding-bottom: 90px;
+  padding: 80px 0 90px 40px;
+  overflow: hidden;
 }
 
-article:first-of-type {
-    padding: 90px 440px 45px 90px;
+.maincontent {
+  width: 65%;
+  float: left;
+  overflow: hidden;
 }
 
 article {
-  padding: 45px 440px 45px 90px;
+  padding: 0 0 65px 0;
+}
+
+article p {
+  padding-right: 50px;
+  max-width: 660px;
 }
 
 h2 {
@@ -63,6 +83,8 @@ h2 {
 
 p {
   padding: 20px 0;
+  line-height: 150%;
+  text-align: justify;
 }
 
 a {
@@ -79,6 +101,7 @@ a {
 
 
 .button {
+  display: inline-block;
   font-size: 14px;
   color: white;
   background: #50c3af;
@@ -94,16 +117,52 @@ a {
   margin-left: 30px;
 }
 
+/*Sidebar*/
+
+#sidebar {
+  padding: 40px;
+  margin: 90px 100px 90px 100px;
+  background: transparent;
+  width: 10%;
+  background: #f6f7f8;
+  overflow: hidden;
+  min-width: 220px;
+}
+
+#sidebar .block {
+  display: block;
+  width: auto;
+  padding: 20px;
+  margin: 0 0 50px 0;
+}
+
+#sidebar h3 {
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+
+#sidebar p {
+  font-size: 14px;
+  color: #787b80;
+  line-height: 150%;
+  text-align: justify;
+}
+
+#categories {
+
+}
+
+
+
+
 
 /*Footer*/
 
 footer {
-  display: inline;
   color: #7e8287;
   font-size: 12px;
-  border-top-width: 1px;
-  border-top-style: solid;
-  border-top-color: #7e8287;
+  border-top: 1px solid #7e8287;
   background: #ffffff;
-  padding: 20px 1000px 55px 96px;
+  padding: 15px 0 30px 0;
+  clear: both;
 }
