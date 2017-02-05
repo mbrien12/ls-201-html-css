@@ -144,6 +144,8 @@ a {
   background: #50c3af;
   padding: 5px 25px;
   border-radius: 20px;
+  border: none;
+  cursor: pointer;
 }
 
 .prev {
