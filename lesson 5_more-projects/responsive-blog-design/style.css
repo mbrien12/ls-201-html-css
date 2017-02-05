@@ -11,9 +11,6 @@ body {
   color: #45494d;
 }
 
-div {
-  display: block;
-}
 
 /*Header*/
 
@@ -75,6 +72,7 @@ main {
 article {
   padding: 0 0 65px 0;
 }
+
 
 article p {
   padding-right: 50px;
@@ -155,6 +153,31 @@ a {
 .next {
   margin-left: 30px;
 }
+
+/*Comments*/
+
+.profile {
+  border-radius: 25px;
+  float: left;
+  margin-right: 12px;
+}
+
+.comments header {
+  padding-top: 20px;
+}
+
+/*Form*/
+input, textarea {
+  display: block;
+  margin: 10px 0 10px 0;
+  padding: 10px 0 15px 15px;
+  width: 660px;
+}
+
+input:nth-last-of-type(1) {
+  width: 90px;
+}
+
 
 
 /*Footer*/

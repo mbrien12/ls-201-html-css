@@ -23,24 +23,51 @@
     <main>
     <div id="maincontent">
     <article>
-      <h2><a href="blog-post.html">Post Headline</a></h2>
+      <header>
+      <h2>Post Headline</h2>
       <p>Written by <a href="#">Shane Riley</a> on Feb,15,2014</p>
+      </header>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alquip ex ea commodo consequat. Duis aute irure dolor in rprehenderit in voluptate velit esse culpa qui officia deserunt mollit.</p>
     </article>
 
-    <article>
-      <h2>Post Headline</h2>
-      <p>Written by <a href="#">Shane Riley</a> on Feb,15,2014</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alquip ex ea commodo consequat. Duis aute irure dolor in rprehenderit.</p>
+
+      <!--Comments-->
+      <article>
+      <div class="comments">
+      <h2>Comments</h2>
+      <header>
+        <img src="images/kevin.jpg" alt="kevin" class="profile">
+          <p><a href="#">Kevin</a> on Feb,15,2014</p>
+      </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          </div>
+
+          <div class="comments">
+          <header>
+            <img src="images/chris.jpg" alt="chris" class="profile">
+              <p><a href="#">Chris</a> on Feb,15,2014</p>
+          </header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              </div>
+            </article>
+
+      <!--Form-->
+      <article>
+      <h2>Post Comments</h2>
+      <form action="index.html" method="post">
+        <fieldset>
+          <input type="text" name="name" placeholder="Enter your Name">
+          <input type="email" name="email" placeholder="Enter your Email Address">
+          <textarea name="comments" placeholder="Enter your Comments"></textarea>
+          <input type="submit" name="submit" value="Submit" class="button">
+        </fieldset>
+      </form>
     </article>
 
-    <!--Pagination-->
-
-    <div class="pagination">
-      <a href class="button prev">Prev</a>
-      <a href class="button next">Next</a>
-    </div>
   </div>
+
+
+
 
 
     <!--Sidebar-->
