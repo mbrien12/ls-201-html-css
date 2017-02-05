@@ -7,8 +7,7 @@
 
 
 body {
-  background: #3d3d3d;
-  font-family: Helvetica, Arial, sans-serif;
+  font: normal 20px "Avenir", Helvetica, Arial, sans-serif;
   color: #45494d;
 }
 
@@ -18,7 +17,12 @@ div {
 
 /*Header*/
 
-h1 {
+body > header {
+  background: #3d3d3d;
+  padding: 130px 0 50px 0;
+}
+
+body > header h1 {
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 30px;
@@ -29,7 +33,7 @@ h1 {
   background-position: bottom;
   background-repeat: no-repeat;
   padding-bottom: 125px;
-  margin: 140px 90px;
+  margin-bottom: 125px;
 }
 
 header nav {
@@ -56,15 +60,16 @@ nav a.active {
 /*Main*/
 
 main {
-  background: #ffffff;
-  padding: 80px 0 90px 40px;
-  overflow: hidden;
+  max-width: 1000px;
+  padding: 80px 0;
+  margin: 0 auto;
 }
 
-.maincontent {
+#maincontent {
   width: 65%;
   float: left;
-  overflow: hidden;
+  padding-right: 11.5%;
+  margin-bottom: 90px;
 }
 
 article {
@@ -92,11 +97,45 @@ a {
   text-decoration: none;
 }
 
+/*Sidebar*/
+
+#sidebar {
+  background: #f6f7f8;
+  overflow: hidden;
+  padding: 35px;
+}
+
+
+#sidebar h3 {
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+
+#sidebar p {
+  font-size: 14px;
+  color: #787b80;
+}
+
+
+#sidebar ul {
+  padding: 0 0 105px 20px;
+  font-size: 14px;
+  list-style: url("images/blt_ul.png");
+}
+
+#sidebar li {
+  padding: 0 0 5px 0;
+  text-transform: uppercase;
+}
+
+#sidebar li a {
+  color: #787b80;
+}
+
 /*Buttons*/
 
 .pagination {
-  padding: 0 900px 90px 90px;
-  display: inline;
+  margin-left: 25px;
 }
 
 
@@ -117,52 +156,16 @@ a {
   margin-left: 30px;
 }
 
-/*Sidebar*/
-
-#sidebar {
-  padding: 40px;
-  margin: 90px 100px 90px 100px;
-  background: transparent;
-  width: 10%;
-  background: #f6f7f8;
-  overflow: hidden;
-  min-width: 220px;
-}
-
-#sidebar .block {
-  display: block;
-  width: auto;
-  padding: 20px;
-  margin: 0 0 50px 0;
-}
-
-#sidebar h3 {
-  text-transform: uppercase;
-  padding-bottom: 15px;
-}
-
-#sidebar p {
-  font-size: 14px;
-  color: #787b80;
-  line-height: 150%;
-  text-align: justify;
-}
-
-#categories {
-
-}
-
-
-
-
 
 /*Footer*/
 
 footer {
+  max-width: 1000px;
   color: #7e8287;
   font-size: 12px;
   border-top: 1px solid #7e8287;
   background: #ffffff;
   padding: 15px 0 30px 0;
   clear: both;
+  margin: 0 auto;
 }
