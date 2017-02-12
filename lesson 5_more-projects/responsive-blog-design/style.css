@@ -194,3 +194,64 @@ footer {
   clear: both;
   margin: 0 auto;
 }
+
+/*Media queries*/
+
+/*Large tablet - ipad*/
+
+@media screen and (max-width: 768px){
+  body > header {
+    padding: 30px 0 10px 0;
+  }
+
+  body > header h1 {
+    letter-spacing: 10px;
+  }
+
+  header nav {
+    padding-bottom: 10px;
+  }
+}
+
+/*Small tablet*/
+
+@media screen and (max-width: 600px) {
+  #maincontent {
+    float: none;
+    width: auto;
+    padding: 0 5px 50px 25px;
+  }
+
+#sidebar .block {
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+}
+}
+
+
+/*Mobile*/
+
+@media screen and (max-width: 480px) {
+  body > header h1 {
+    font-size: 48px;
+    margin: 0 30px 40px 30px;
+  }
+
+  #maincontent {
+    padding-bottom: 0;
+  }
+
+  #sidebar {
+    padding-top: 0;
+  }
+
+  #sidebar .block {
+    display: block;
+    width: auto;
+  }
+
+  #sidebar ul {
+    padding-bottom: 30px;
+  }
+}
